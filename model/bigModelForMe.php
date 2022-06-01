@@ -117,7 +117,11 @@ header("Access-Control-Allow-Origin: *");
 			}
 			$q = substr($q,0,-1);
 			$q .= " FROM $table";
-			$q .= " WHERE $contrainte";
+			if($contrainte != ''){
+				$q .= " WHERE $contrainte";
+			}else{
+				$q .= "$contrainte";
+			}
 			$v = $this->db->query($q);
 			$r = array();
 			while($donneee = $v->fetch(PDO::FETCH_OBJ)){
