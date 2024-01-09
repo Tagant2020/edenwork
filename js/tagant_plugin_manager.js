@@ -95,6 +95,10 @@
 								$('#contenu').html(data2);
 							}
 						})
+						if(sessionStorage.getItem('role_num') == 1){
+							$('body').tagant_recup(); 
+						}
+						
 					}else if(nom == "contact"){
 						$('body #reseteur').trigger('click');
 						$("#successContactSave").fadeIn(1000).delay(1500).fadeOut(1000);
