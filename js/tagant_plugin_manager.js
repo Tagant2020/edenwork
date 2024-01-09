@@ -96,7 +96,7 @@
 							}
 						})
 						if(sessionStorage.getItem('role_num') == 1){
-							$('body').tagant_recup(); 
+							location.reload();
 						}
 						
 					}else if(nom == "contact"){
@@ -110,7 +110,7 @@
 		})
 	}
 	
-	jQuery.fn.tagant_recup = function(donnee){
+	jQuery.fn.tagant_recup = function(){
 		$.ajax({
 			url:'controleur/selectAll.php',
 			type:'post',
