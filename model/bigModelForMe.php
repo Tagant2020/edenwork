@@ -2,7 +2,7 @@
 header("Access-Control-Allow-Origin: *");
 			try
 			{
-				$db = new PDO('mysql:host=localhost;dbname=edenwork','root','');
+				$db = new PDO('mysql:host=localhost;dbname=u854636532_iliad','u854636532_tagant','Iliad@.2024');
 			}
 			catch (Exception $e)
 			{
